@@ -199,7 +199,7 @@ void UsartReceive_IDLE(UART_HandleTypeDef *huart)
 
  void Analysis_Serial_Data(void)
  {
-	 if(UsartType_RX.receive_flag==1)		  
+	 if(UsartType_RX.receive_flag==1&&huart1.gState == HAL_UART_STATE_READY)		  
 	 {	
 		 UsartType_RX.receive_flag=0;	 
 		 HAL_GPIO_TogglePin(GPIOE,GPIO_PIN_8); // 翻转LED灯状态     
