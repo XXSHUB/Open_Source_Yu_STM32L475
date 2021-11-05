@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * @file    usart.h
+  * @file    dma.h
   * @brief   This file contains all the function prototypes for
-  *          the usart.c file
+  *          the dma.c file
   ******************************************************************************
   * @attention
   *
@@ -17,8 +17,8 @@
   ******************************************************************************
   */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __USART_H__
-#define __USART_H__
+#ifndef __DMA_H__
+#define __DMA_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -27,29 +27,17 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
+/* DMA memory to memory transfer handles -------------------------------------*/
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-extern UART_HandleTypeDef huart1;
-
 /* USER CODE BEGIN Private defines */
-#define USART_MAX_LEN 255
-typedef struct  
-{  
-	uint8_t  receive_flag:1;     //start flag
-	uint8_t  finish_flag:1;      //finish flag	
-	uint16_t Size;               //length
-	uint8_t  DMA_pData[USART_MAX_LEN];     //DMA receive buffer
-}USART_TYPE; 
 
-extern USART_TYPE  UsartType_RX;
-extern USART_TYPE  UsartType_TX;
-void UsartReceive_IDLE(UART_HandleTypeDef *huart);
-void Analysis_Serial_Data(void);
 /* USER CODE END Private defines */
 
-void MX_USART1_UART_Init(void);
+void MX_DMA_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
@@ -59,6 +47,6 @@ void MX_USART1_UART_Init(void);
 }
 #endif
 
-#endif /* __USART_H__ */
+#endif /* __DMA_H__ */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

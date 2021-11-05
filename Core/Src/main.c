@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -55,8 +56,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define len 3 //宏定义数据长度
-uint8_t RxBuffer[len];
+
 /* USER CODE END 0 */
 
 /**
@@ -87,15 +87,22 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART1_UART_Init();
+  MX_DMA_Init();
+  MX_USART1_UART_Init();  
   /* USER CODE BEGIN 2 */
- HAL_UART_Receive_IT(&huart1, RxBuffer, len); //启动串口1接收中断
+  /* 清除串口空闲中断标志 */
+  __HAL_UART_CLEAR_IDLEFLAG(&huart1); 
+  /* 使能串口空闲中断 */
+  __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE); 
+  /* 配置串口 DMA接收 */
+	HAL_UART_Receive_DMA(&huart1, UsartType_RX.DMA_pData, USART_MAX_LEN);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    Analysis_Serial_Data();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -150,14 +157,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
- if (huart->Instance == huart1.Instance)//串口1接收中断
-  {
- HAL_UART_Transmit_IT(&huart1, RxBuffer, len); //将接收到的数据发送回去
- HAL_UART_Receive_IT (&huart1, RxBuffer, len);  //重新使能串口接收中断
-  }
-}
+
 /* USER CODE END 4 */
 
 /**

@@ -24,6 +24,7 @@ INCLUDE_FOLDERS += .eide/deps
 # library search folders
 
 # c source files
+C_SOURCES += Core/Src/dma.c
 C_SOURCES += Core/Src/gpio.c
 C_SOURCES += Core/Src/main.c
 C_SOURCES += Core/Src/stm32l4xx_hal_msp.c
