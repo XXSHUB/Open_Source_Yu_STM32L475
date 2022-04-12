@@ -1,0 +1,1 @@
+-c -x assembler-with-cpp -mthumb -mfloat-abi=soft -mcpu=cortex-m4 -g -I./.eide/deps -I./Inc -I./Drivers/CMSIS/Device/ST/STM32L4xx/Include -I./Drivers/STM32L4xx_HAL_Driver/Inc -I./Drivers/CMSIS/Include -I./Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I./.eide/deps -I./src -I./Drivers/STM32L4xx_HAL_Driver/Src -o ./build/Debug/src/startup_stm32l475xx.o -MMD ./src/startup_stm32l475xx.s

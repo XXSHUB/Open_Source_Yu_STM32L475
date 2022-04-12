@@ -1,0 +1,101 @@
+{
+    "name": "L475_LED_GCC",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "showRepathOnLog": true,
+    "threadNum": 6,
+    "rootDir": "e:\\XYZ\\CubeMX\\Project\\ZHIHU\\GCC\\L475_LED_GCC",
+    "dumpPath": ".eide\\log",
+    "outDir": "build\\Debug",
+    "ram": 20480,
+    "rom": 65536,
+    "incDirs": [
+        ".eide/deps",
+        "Inc",
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+        "Drivers/STM32L4xx_HAL_Driver/Inc",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32L4xx_HAL_Driver/Inc/Legacy",
+        ".eide/deps",
+        "src",
+        "Drivers/STM32L4xx_HAL_Driver/Src"
+    ],
+    "libDirs": [],
+    "defines": [
+        "STM32L475xx",
+        "USE_HAL_DRIVER "
+    ],
+    "sourceList": [
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c",
+        "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c",
+        "src/gpio.c",
+        "src/main.c",
+        "src/startup_stm32l475xx.s",
+        "src/stm32l4xx_hal_msp.c",
+        "src/stm32l4xx_it.c",
+        "src/system_stm32l4xx.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1649768089043.9358,
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "toolPrefix": "arm-none-eabi-",
+            "microcontroller-cpu": "cortex-m4-none",
+            "microcontroller-fpu": "cortex-m4-none",
+            "microcontroller-float": "cortex-m4-none",
+            "target": "cortex-m4-none"
+        },
+        "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": ""
+        },
+        "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "--specs=nosys.specs --specs=nano.specs",
+            "LIB_FLAGS": "-lm",
+            "link-scatter": [
+                "\"e:/XYZ/CubeMX/Project/ZHIHU/GCC/L475_LED_GCC/src/STM32L475VETx_FLASH.ld\""
+            ]
+        }
+    },
+    "env": {},
+    "sha": {
+        "c/cpp-defines": "7eee011f7a549e21c54dc90a3b2f417b",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "6a48d7cd1346f7de3e5d6ca4ed1c4150",
+        "c/cpp-compiler": "292b10e2fef533def4cb15297b4e0391",
+        "asm-compiler": "dd2e48fddd09233278cb37447cf1e693",
+        "linker": "93c0f8be4473e25ef2cf338f8ee30a42"
+    }
+}

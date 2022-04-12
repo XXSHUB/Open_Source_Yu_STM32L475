@@ -1,0 +1,217 @@
+[2022-04-12 20:54:50]	compilation failed at : "e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC\src\gpio.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Inc/gpio.h:28,
+                 from ./src/gpio.c:21:
+./Inc/main.h:31:10: fatal error: stm32l4xx_hal.h: No such file or directory
+ #include "stm32l4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-04-12 20:56:07]	compilation failed at : "e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC\src\gpio.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Inc/gpio.h:28,
+                 from ./src/gpio.c:21:
+./Inc/main.h:31:10: fatal error: stm32l4xx_hal.h: No such file or directory
+ #include "stm32l4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-04-12 20:56:49]	compilation failed at : "e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC\src\gpio.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Inc/gpio.h:28,
+                 from ./src/gpio.c:21:
+./Inc/main.h:31:10: fatal error: stm32l4xx_hal.h: No such file or directory
+ #include "stm32l4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-04-12 20:56:53]	compilation failed at : "e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC\src\gpio.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Inc/gpio.h:28,
+                 from ./src/gpio.c:21:
+./Inc/main.h:31:10: fatal error: stm32l4xx_hal.h: No such file or directory
+ #include "stm32l4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-04-12 21:01:39]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         960 B       512 KB      0.18%
+
+
+[2022-04-12 21:02:20]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         960 B       512 KB      0.18%
+
+
+[2022-04-12 21:04:20]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         960 B       512 KB      0.18%
+
+
+[2022-04-12 21:04:49]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         960 B       512 KB      0.18%
+
+
+[2022-04-12 21:08:41]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         976 B       512 KB      0.19%
+
+
+[2022-04-12 21:09:11]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         976 B       512 KB      0.19%
+
+
+[2022-04-12 21:18:27]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         976 B       512 KB      0.19%
+
+
+[2022-04-12 21:20:09]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        96 KB      1.60%
+            RAM2:          0 GB        32 KB      0.00%
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/gpio.o: in function `MX_GPIO_Init':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:52: undefined reference to `HAL_GPIO_WritePin'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/gpio.c:59: undefined reference to `HAL_GPIO_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `SystemClock_Config':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:114: undefined reference to `HAL_PWREx_ControlVoltageScaling'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:130: undefined reference to `HAL_RCC_OscConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:143: undefined reference to `HAL_RCC_ClockConfig'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/main.o: in function `main':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/main.c:73: undefined reference to `HAL_Init'
+c:/users/xyz/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/src/stm32l4xx_it.o: in function `SysTick_Handler':
+e:\XYZ\CubeMX\Project\ZHIHU\GCC\L475_LED_GCC/./src/stm32l4xx_it.c:189: undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:         976 B       512 KB      0.19%
+
+
+[2022-04-12 21:51:53]	[done]
+	build successfully !
+
+[2022-04-12 22:04:35]	[done]
+	build successfully !
+
+[2022-04-12 22:04:57]	[done]
+	build successfully !
+

@@ -1,0 +1,18 @@
+[2022/4/12 17:48:14 GMT+0800] : launched
+[Hidden] : EPERM: operation not permitted, watch
+Error: EPERM: operation not permitted, watch
+	at FSEvent.FSWatcher._handle.onchange (node:internal/fs/watchers:204:21)
+[Hidden] : EPERM: operation not permitted, watch
+Error: EPERM: operation not permitted, watch
+	at FSEvent.FSWatcher._handle.onchange (node:internal/fs/watchers:204:21)
+
+
+[2022/4/12 20:28:26 GMT+0800] : launched
+
+
+[2022/4/12 20:46:41 GMT+0800] : launched
+
+
+[2022/4/12 21:18:17 GMT+0800] : launched
+
+
