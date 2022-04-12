@@ -1,6 +1,0 @@
-objcopy.exe --update-section ER_IROM1="c:\XYZ\CubeMX\Project\ZHIHU\STM32L475\STM32L475\build\STM32L475\STM32L475.bin" "c:\XYZ\CubeMX\Project\ZHIHU\STM32L475\STM32L475\build\STM32L475\STM32L475.axf" "c:\XYZ\CubeMX\Project\ZHIHU\STM32L475\STM32L475\build\STM32L475\STM32L475.elf"
-
-objcopy.exe: c:\XYZ\CubeMX\Project\ZHIHU\STM32L475\STM32L475\build\STM32L475\STM32L475.elf: warning: allocated section `RW_IRAM1' not in segment
-
-WARNING: The runtime version supported by this application is unavailable.
-Using default runtime: v4.0.30319

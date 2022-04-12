@@ -28,7 +28,8 @@
             },
             "forcedInclude": [
                 ".\\..\\..\\..\\..\\..\\..\\Users\\xxs_w\\.vscode\\extensions\\cl.eide-2.13.1\\bin\\include\\internal_headers\\armcc_intr.h"
-            ]
+            ],
+            "configurationProvider": "cl.eide"
         }
     ],
     "version": 4

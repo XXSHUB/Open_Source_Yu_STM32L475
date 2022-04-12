@@ -19,7 +19,7 @@
             "request": "launch",
             "name": "stlink",
             "servertype": "openocd",
-            "executable": ".\\build\\STM32L475\\STM32L475.elf",
+            "executable": "build\\STM32L475\\STM32L475.elf",
             "runToMain": true,
             "configFiles": [
                 "interface/stlink.cfg",
